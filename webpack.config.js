@@ -12,11 +12,8 @@ module.exports = {
     contentBase: "public"
   },
   module: {
-    preLoaders: [{
-      test: /\.js$/,
-      loaders: ["eslint","source-map-loader"]
-    }],
-    loaders: [{
+    loaders: [
+    {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: "babel-loader"
