@@ -7,11 +7,21 @@ const NavBar = () => {
         <div className="nav">
             <NavSection pos="left">
                 <NavItem>
-                    <h1>Trakr</h1>
+                    <h1>Dashboard</h1>
+                    <span className="icon">
+                        <i className="fa fa-techometer"></i>
+                    </span>
                 </NavItem>
                 <NavItem>
+                    <h1>Schools</h1>
                     <span className="icon">
-                        <i className="fa fa-rebel"></i>
+                        <i className="fa fa-graduation-cap"></i>
+                    </span>
+                </NavItem>
+                <h1>Athletes</h1>
+                    <NavItem>
+                    <span className="icon">
+                        <i className="fa fa-users"></i>
                     </span>
                 </NavItem>
             </NavSection>
