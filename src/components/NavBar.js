@@ -9,7 +9,7 @@ const NavBar = () => {
                 <NavItem>
                     <h1>Dashboard</h1>
                     <span className="icon">
-                        <i className="fa fa-techometer"></i>
+                        <i className="fa fa-tachometer"></i>
                     </span>
                 </NavItem>
                 <NavItem>
