@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import NavBar from "./components/NavBar";
 
 const App = () => {
     return (
-        <h1>Trakr</h1>
+        <NavBar></NavBar>
     );
 }
 
 ReactDOM.render(
     <App />,
     document.getElementById("root")
-)
+);

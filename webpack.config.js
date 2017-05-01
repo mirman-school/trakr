@@ -12,12 +12,23 @@ module.exports = {
     contentBase: "public"
   },
   module: {
-    loaders: [
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: "babel-loader"
-    }]
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader"
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.js$/,
+        use: ["source-map-loader"],
+        enforce: "pre"
+      }
+    ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
