@@ -5,7 +5,6 @@ const NavBar = () => {
     return (
         <div>
             <h1>Welcome to trakr!</h1>
-            <h1 style={{fontSize: "30px"}}>Made by the Eric, Gavin, and Amaan</h1>
             <Menu fluid widths={4}>
             <Menu.Item name='dashboard'>
                 Dashboard
